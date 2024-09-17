@@ -11,6 +11,8 @@ def transform_xml(input_file, output_file):
     # Convert folder data from original XML to new format
     for folder in root.findall('folder'):
         category_name = folder.find('name').text
+        if category_name == "Plan to watch":
+            category_name = "Plan to Watch"
         for item in folder.find('data').findall('item'):
             anime = ET.SubElement(new_root, 'anime')
             ET.SubElement(anime, 'series_animedb_id').text = item.find('link').text.split('/')[-1]
