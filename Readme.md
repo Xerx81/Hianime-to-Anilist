@@ -4,7 +4,6 @@ The default export.xml file of Hianime cannot be directly imported into Anilist.
 
 ## Usage:
 
-#### Step 1:
 - Clone this repository
 ```
 git clone https://github.com/Xerx81/Hianime-to-Anilist.git
