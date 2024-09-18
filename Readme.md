@@ -1,7 +1,7 @@
 
 # Hianime to Anilist
 
-The default export.xml file of Hianime cannot be directly imported into Anilist. Therefore, I wrote this python script which can restructure the xml document so that it can be easily imported by Anilist.
+The default export.xml file of Hianime cannot be directly imported into Anilist. Therefore, I made this website which can restructure the xml document so that it can be easily imported by Anilist.
 
 ## Usage 1:
 
