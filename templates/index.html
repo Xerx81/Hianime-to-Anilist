@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hianime to AL</title>
+        <link rel="stylesheet" href="static/styles.css"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1><span style="color: pink;">Hianime</span> To <span style="color: lightblue;">Anilist</span></h1>
+            <h3>Easily export your anime list from hianime to anilist</h3>
+            <form method="POST" enctype="multipart/form-data" class="upload-area">
+                <input type="file" name="file" accept=".xml" required>
+                <button type="submit" class="transform-btn">Transform</button>
+            </form>
+            <hr>
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <ul>
+                    <li>The name of the XML file must be "export.xml", otherwise it won't work.</li>
+                    <li>Upload the XML file and click on transform to get the restructured XML file.</li>
+                </ul>
+            </div>
+            <footer>
+                Click
+                <a href="https://github.com/Xerx81/Hianime-to-Anilist" class="git-link"">here</a>
+                for the github repository.
+            </footer>
+        </div>
+    </body>
+</html>
