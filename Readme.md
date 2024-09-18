@@ -1,27 +1,49 @@
+
 # Hianime to Anilist
 
 The default export.xml file of Hianime cannot be directly imported into Anilist. Therefore, I wrote this python script which can restructure the xml document so that it can be easily imported by Anilist.
 
-## Usage:
+## Usage 1:
 
-- Clone this repository
+- Go to the [Hianime to Al](https://hianimetoal.pythonanywhere.com/).
+
+- Upload your xml file. (make sure the file is name is "export.xml")
+
+- Click on transform and download the new xml file, which can be directly imported by [Anilist](https://anilist.co/settings/import)
+
+## Usage 2:
+If for some reason site isn't working you can also follow these steps to use the program.
+
+- Clone this repository.
 ```
 git clone https://github.com/Xerx81/Hianime-to-Anilist.git
 ```
 
-- Change the directory
+- Change the directory.
 ```
 cd Hianime-to-Anilist
 ```
 
-- Put the export.xml file of Hianime in the same directory.
-
-- Run the python file
+- Create Virtual enviornment.
 ```
-python3 hianime_to_al.py
+python3 -m venv .venv
+```
+- Activate the venv.
+```
+source .venv/bin/activate
 ```
 
-- "new_export.xml" file will be generated.
+- Install flask.
+```
+pip install flask
+```
+
+- Run the flask app.
+```
+python3 app.py
+```
+
+- Click on the link of flask server, the site will open in your browser.
 
 ## Contribution:
 
@@ -30,3 +52,5 @@ python3 hianime_to_al.py
 - Suggest features: If you have ideas for new features, feel free to open a feature request.
 
 - Contribute code: Fork the repository, make your changes, and submit a pull request. Please follow the standard code style and formatting guidelines.
+
+
